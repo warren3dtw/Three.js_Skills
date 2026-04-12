@@ -133,6 +133,7 @@ Compress-Archive -Path threejs-camera\SKILL.md -DestinationPath threejs-camera.s
 | `threejs-camera.skill` | `/threejs-camera` | PerspectiveCamera、OrthographicCamera、OrbitControls、滑鼠控制 | [SKILL.md](threejs-camera-SKILL.md) |
 | `threejs-materials.skill` | `/threejs-materials` | 所有內建材質、PBR、貼圖設定、環境貼圖、lil-gui Debug | [SKILL.md](threejs-materials-SKILL.md) |
 | `threejs-raycaster.skill` | `/threejs-raycaster` | 光線投射、滑鼠 hover、物件點擊事件、GLTF 模型互動、動畫碰撞偵測 | [SKILL.md](threejs-raycaster-SKILL.md) |
+| `threejs-bvh.skill` | `/threejs-bvh` | BVH 加速 Raycaster、網格碰撞偵測、距離查詢、SkinnedMesh、Worker 非同步建構 | [SKILL.md](threejs-bvh-SKILL.md) |
 
 > 各 skill 的詳細實作內容請參閱對應的 `*-SKILL.md` 檔案。
 
