@@ -2,12 +2,12 @@
 name: threejs-camera
 description: >
   Three.js 相機設定與控制的完整指引。當使用者在 Three.js 專案中涉及任何相機相關操作時，請務必使用此技能，包括：建立 PerspectiveCamera 或 OrthographicCamera、設定 fov / near / far / aspectRatio 參數、用滑鼠控制相機移動、整合 OrbitControls 或其他內建控制器、處理 Z-fighting 問題。即使使用者沒有明確說「相機」，只要涉及視角、視野、鏡頭、畫面比例、場景瀏覽互動，都應觸發此技能。
-  本技能以 threejs-singleton-scene 的 Experience 架構為前提，所有相機操作都在 Camera.js 模組內進行。
+  本技能以 threejs-experience 的 Experience 架構為前提，所有相機操作都在 Camera.js 模組內進行。
 ---
 
 # Three.js Camera Skill
 
-本技能以 **Experience Singleton 架構**為前提。相機邏輯集中在 `src/Experience/Camera.js`，透過 `new Experience()` 取得 singleton 後存取所需資源。
+本技能以 **Experience Singleton 架構**（`threejs-experience`）為前提。相機邏輯集中在 `src/Experience/Camera.js`，透過 `new Experience()` 取得 singleton 後存取所需資源。
 
 ---
 
@@ -137,9 +137,10 @@ resize() {
 }
 
 update() {
-  this.camera.update()   // controls.update() 在此執行
+  this.camera.update()    // controls.update() 在此執行
+  this.raycaster.update() // 若有使用 threejs-raycaster，在 world 之前更新
   this.world.update()
-  this.renderer.update() // render call 永遠在最後
+  this.renderer.update()  // render call 永遠在最後
 }
 ```
 

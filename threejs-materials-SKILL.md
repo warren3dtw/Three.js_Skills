@@ -2,12 +2,12 @@
 name: threejs-materials
 description: >
   Three.js 材質（Material）選擇、屬性設定與紋理整合的完整指引。當使用者在 Three.js 專案中涉及任何材質相關操作時，請務必使用此技能，包括：選擇適合的 Material 類型、設定 map / color / wireframe / opacity / alphaMap 等屬性、整合 PBR 材質（MeshStandardMaterial / MeshPhysicalMaterial）、載入環境貼圖（RGBELoader）、使用 MeshMatcapMaterial 或 MeshToonMaterial、處理 metalness / roughness / normalMap 等進階屬性。即使使用者只說「材質」、「質感」、「貼圖」、「反射」、「透明」，都應觸發此技能。
-  本技能以 threejs-singleton-scene 的 Experience 架構為前提，所有材質操作都在 World 子模組內進行。
+  本技能以 threejs-experience 的 Experience 架構為前提，所有材質操作都在 World 子模組內進行。
 ---
 
 # Three.js Materials Skill
 
-本技能以 **Experience Singleton 架構**為前提。材質邏輯集中在 `src/Experience/World/` 下的各個物件模組，透過 `new Experience()` 取得 singleton 後存取 `resources`、`scene`、`debug`。
+本技能以 **Experience Singleton 架構**（`threejs-experience`）為前提。材質邏輯集中在 `src/Experience/World/` 下的各個物件模組，透過 `new Experience()` 取得 singleton 後存取 `resources`、`scene`、`debug`。
 
 ---
 
