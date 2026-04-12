@@ -1,18 +1,17 @@
 ---
-name: threejs-singleton-scene
+name: threejs-experience
 description: >
   當使用者想從零開始建立 Three.js 場景、使用 Experience singleton 架構、
   或將現有 Three.js 程式碼重構為模組化類別結構時，請使用此 skill。
   觸發情境包括：建立新的 Three.js 專案、搭建 Experience / Camera / Renderer /
   World / Sizes / Time / Resources / Debug 等模組、詢問 Three.js 大型專案的
-  資料夾結構或最佳實踐、提到 Bruno Simon / Three.js Journey 架構。
+  資料夾結構或最佳實踐。
   只要使用者提到「Three.js singleton」、「Experience 架構」、「Three.js 模組化」，
   就應立即使用此 skill，不需要等使用者明確要求。
 ---
 
-# Three.js Singleton Scene — 從零開始建立指南
+# Three.js Experience — 從零開始建立指南
 
-基於 Bruno Simon《Three.js Journey》Lesson 26 的 **Experience Singleton 架構**。
 所有子模組透過 `new Experience()` 取得唯一實例，不需要手動傳遞參照。
 
 ---

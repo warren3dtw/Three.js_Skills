@@ -129,7 +129,7 @@ Compress-Archive -Path threejs-camera\SKILL.md -DestinationPath threejs-camera.s
 
 | Skill 檔案 | 觸發指令 | 涵蓋範圍 | 詳細文件 |
 |-----------|---------|---------|---------|
-| `threejs-singleton-scene.skill` | `/threejs-singleton-scene` | Experience Singleton 架構、EventEmitter、Sizes、Time、Resources、Renderer | [SKILL.md](threejs-singleton-scene-SKILL.md) |
+| `threejs-experience.skill` | `/threejs-experience` | Experience Singleton 架構、EventEmitter、Sizes、Time、Resources、Renderer | [SKILL.md](threejs-experience-SKILL.md) |
 | `threejs-camera.skill` | `/threejs-camera` | PerspectiveCamera、OrthographicCamera、OrbitControls、滑鼠控制 | [SKILL.md](threejs-camera-SKILL.md) |
 | `threejs-materials.skill` | `/threejs-materials` | 所有內建材質、PBR、貼圖設定、環境貼圖、lil-gui Debug | [SKILL.md](threejs-materials-SKILL.md) |
 
@@ -154,6 +154,6 @@ Claude 自動觸發 `threejs-camera` skill，遵照架構準則實作。
 
 **你想從零開始建立一個 Three.js 專案：**
 ```
-/threejs-singleton-scene
+/threejs-experience
 幫我建立一個新的 Three.js 專案，專案名稱是 my-portfolio
 ```
